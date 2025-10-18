@@ -1,0 +1,297 @@
+#######################    HTML Styles    #######################   
+
+<!--comments-->--> this is a comment
+<head></head>--> contains information about the webpage.
+<title></title>--> Adds the title of the website.
+<link rel="" type="" href="">--> links files and formats to the html.
+links stylesheets, favicons, fonts, etc.
+<style></style>--> Adds internal styles to the webpage and is used for Internal CSS Formatting. 
+
+<body></body>--> contains visual elements of the webpage.
+
+semantic_tags -->A semantic element clearly describes its meaning to both the browser and the developer.
+<header></header>--> Adds a header container.
+<nav></nav>--> used for navigation.
+<main></main>--> container for the main body of the page.
+    <section></section>--> adds a section container inside container.  
+    <aside></aside>--> Side content 
+    <article></article>--> independent content
+<footer></footer>--> adds a footer conatiner.
+
+
+<h></h>--> these tags add headings through h1,h2,h3(each has decreasing fonts).
+<p></p>--> these tags add paragraphs(they have line breaks after them).
+<pre></pre>--> pre formated paragraphs that retain their formatinng inside the paragraph.
+Text formatting
+<b></b>--> Bold text
+<i></i>--> italics text
+<u></u>--> underlined text
+<del></del>--> deleted text
+<big></big>--> big text
+<small></small>--> small text
+<sub></sub>--> subscript text
+<sup></sup>--> superscript text
+<tt></tt>--> monospaced text
+<mark></mark>--> marked text
+
+<a href="$1" target=""></a>-->this is an anchor tag. Adds a hyperlink i.e.A hyperlink is a ditital refernce to data that a user can follow by traversing in it.
+$1 is the link anchored,target defines where the website will redirect to, self tab(_self) or new tab(_blank).
+mailto:{email} send a mail to the given email.
+
+<img src="" height="" width="" ... >-->adds a image. src adds the source of the image.
+Can be resized using height and width properties. alt adds other information about the img.
+
+<audio src="" controls ></audio>--> Adds an audio file. Controls add controls to the music.
+Type attribute adds typing of the files for websites. Other versions are also added for backup.
+
+<video src="" ></video>Adds an audio file. Controls add controls to the music.
+Type attribute adds typing of the files for websites.height and width can also also changed. 
+Muted and loop atrritbutes are also available. Other versions are also added for backup.
+
+<div></div>--> Block container for styling of grpouped elements.takes how much is needed
+<span></span>--> Inline container for styling of grpouped elements.takes the entire widthof the body.
+
+<ul> <li>$1</li> </ul>--> Unodered lists. Has no order to it. Has bullets. li tag adds the list items.
+<ol> <li>$1</li> </ol>--> Odered lists . Adds numberings in ordered manner. li tag adds the list items.
+<dl> <dti>$1</dt> </dl>--> Description List. Adds a heading and descrpition using dt tag.
+
+#marker can be edited by css psudo_elements
+
+<table></table>--> adds a table.
+<tr></tr>--> Adds a row inside which data is given.
+<td></td>--> adds data to the placeholder inside tr tag.
+<th></th>--> adds the heading row of the table
+
+<button onclick="$1"></button>--> Adds a button. Attributes like style, hrefsetc.
+fuctions can be added on click with the onclick attribute.
+
+<form action="" method= "POST"></form>--> Creates a form.
+enctype = adds an encryption type = multipart/formdata
+<label for=""></label>-->Adds a label to any form format.
+
+<input type="" required maxlength="" >--> adds a input box. type defines type of input. 
+required attribute makes it necessary to be filled up. max length specifies max length of the input. placeholder adds a example inside the format.
+pattern a format to the input -->eg. [min-max]{number of digits}-[min-max]{number of digits}-[min-max]{number of digits}
+
+input types:
+text = text
+submit = submit button
+reset = reset button
+password = password
+email = email
+tel = telephone number
+date = date 
+number = quantity (mina nd max are used, default=""--> adds a default value)
+checkbox = adds a checkbox.
+radio = adds a radio type checkboxes to a group identified by name attribute.
+file = for accepting files. accept attribute specifies types of the files accepted.
+
+<select>..<option></option>..</select> --> add a drop down menu.
+options re given inside the option tags
+
+<textarea><textarea>--> adds a textbox
+
+<hr>--> adds a horizontal line.
+<br>--> adds a line break.
+
+
+#######################    CSS Styles    #######################    
+
+
+<__tag__ style=""></__tag__>--> Adds styles to any tag. styles like background color,border,fontsize etc.
+
+under style = "":
+cursor: pointer changes the cursor to a pointer
+background-image : adds a background image.
+url() adds the source. 
+background-repeat: no-repeat
+background-position : centre
+background-attachment: fixed
+background-size: cover
+
+background-color : adds a background color to the element.
+color : changes the font color.
+values like color name, rgb values(R, G ,B), hexadecimal values (#colorcode), and hsl values
+opacity : adds opacity element and changes it.
+text-align: adds alignmnet to the text.
+
+font-size: canges the font size. Usually done in pixels. em is percentage type(percentage of base font).
+font-family : Adds font families to the page fonts. multiple fonts can abe added to prevent errors.
+@font-face{} : adds fonts to the stylesehet witout using link.
+
+align : adds alignment to a given element.
+
+border : adds border to an element. Border can be added to any side (left right top bottom).
+border-top/bottom/left/right : To edit any side.
+border-width : width of given border. Usually in pixels.
+border-radius: Curves the radius around the edge of the element.Usually in pixels.
+borer-style : adds a style to the border. 
+common styles:
+solid
+rigid
+dashed
+dotted
+double
+inset 
+outset
+none : removes border
+
+border-image: adds a image to a border
+universal format--> border: [width] [style] [color];
+
+text-shadows : adds a shadow to the text. 
+syntax : horizontal_offset vertical_offset blur color .Usually in pixels. 
+more than one shadows can be added. they are comma separated.
+
+box-shadow: horizontal_offset vertical_offset opacity(blur) Usually in pixels. 
+more than one shadows can be added. they are comma separated.
+
+margin: adds a margin. margin is the spacing around a element outside the border.
+margin-top/bottom/left/right : To add or remove margin of any side. Usually in pixels.
+margin-width : width of given margin. Usually in pixels
+mainly formated with width and height tags.
+margin-side: auto --> auto matically margins to any side.
+
+padding: adds space betwwen margin and elemnts inside a div or element.
+padding-top/bottom/left/right : To add or remove padding of any side. Usually in pixels.
+
+width: adds width to the element.
+auto: calculates automatically.
+% is used for percent values.
+
+height: adds height
+height :100vh takes up all space in webpage.
+
+box-sizing: border-box; is used to add padding border and width .
+
+list-style-type: styles the list.none to remove markers
+
+float: The float property is used for positioning and formatting content. text and other elemts flow around the image if floated.
+e.g. let an image float left to the text in a container. 
+The float property can have one of the following values: 
+left - The element floats to the left of its container. 
+right - The element floats to the right of its container.
+if overflowing, body-> display : flow-root;- this makes everything inside the body that floats.
+
+overlflow: when elements flow out of the parent element.
+overlflow types:
+visible : visible overflow
+hidden : hidden overflow
+clip : specifieshow uch can be seen outside element. overflow-clip-margin : specifiesthe amount.
+scroll:adds a scrollbar
+auto : adds a scrollbar if necessary and removes it if not needed
+
+display: specifies how a elements is displayed.
+block-level: takes up the full width. starts on a new line. h1,div,p form etc.
+inline: width is imited to what is necessary. span, img, etc.
+
+elements can be edited to have inline or block.
+block: display as block.
+inline: display as inline
+inline-block: inline but has height and formatting.
+none : remove the element.
+simillar to visiblity.
+
+position: Top bottom left right --> used to move and postion the element.
+relative : postioned relative to where it is
+fixed : position relative to the viewport. it fixes an elemnt to a specified position.
+absoulte : postion relative to nearest parent ancsestor.moves with ancestor.
+sticky : postion based on the scroll postion. Reserves some space for the element
+static : default to element.
+
+combinators:explains the relation between selectors.
+" " decendent: elements inside the element.
+">" child: decendent of decendent.
+"~" general: decendents of body ie. simmlar elements are siblings (div for divs, p for ps) 
+"+" adjacent: next direct sibling.
+ 
+elementtypetag{} : this is used to add style to the elements of the specified tags. 
+body tag, all p tags can be edited at the same time.
+
+*{} : selects all elements of the code.
+
+id: identifier of element.used to add identifiers to elemnts for easy access to styling, linking and group styling.
+#id_name{} is used in the stylesheet file or style tag in head.
+
+class: adds a class to the element.
+.class_name{} is used to call the class for styling.
+
+psudo_classes: modify a special state of a selector.
+syntax--> selector:action{}
+important:
+hover : hovering over
+
+link : href color
+active : onlicked state
+visited: vistied link
+
+selector:not(:hover) --> not in state 
+nth-child(){}: selects the specified index
+
+psudo_classes and combinators can be used to create many formats like drpo-downs.
+
+psudo_elements: 
+syntax--> selector::psudo_element{}
+
+eg> h1::first-letter{}: this can edit the first letter of the header
+selector::selection{} : modifies anything that is selected
+
+selector::before : adds before the selector
+selector::after : adds after the selector
+
+@media screen and (max-width:600px){} : changes using @media property
+Syntax: @media media-type and (media-feature)
+
+flexboxes: The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, 
+align and distribute space among items in a container, even when their size is unknown and/or dynamic.
+
+syntax--> display:flex
+flex-direction: row, column, row-revesre, column-reverse --> direction of flex
+
+justify-content: moves around th axis
+center: centers the elements
+space-between: generates spaces between them to fit the width
+
+align-items : aligns in the vertical axis.
+flex-end
+flex-start
+center
+baseline: text is aligned
+
+flex-wrap: wraps around elements
+defaultis no wrap
+
+align-content: removes space between columns
+
+row/column-gap: adds gap between rows and columns
+
+align-self: aligns the element.
+order; changes order(-1 start , 1 end)
+
+transform: used to translate, transpose, skew, and opaque an elements.
+important:
+translateX/Y(value) : moves the element. X moves in x-axis and Y in y-axis
+translate(x, y) : universal
+rotateX/Y/Z(value) : rotates the element on the axis
+scaleX/Y(value) : scales the element on the axis 
+scale(x, y) : universal
+skewX/Y(value in deg) :skews the elements.
+skew(x, y) : universal
+
+matrix type implication
+transform: 
+
+animation: adds animation to a element
+animaton-name:name of @keyframes nanimation
+animation-duration: duration of animation
+animations-iteration: iterates the animation
+animation-direction: direction of animation
+normal
+reverse
+alterante
+animation-timing-function:adds the timming
+
+from and to are used for animating the effxct
+percentages are used to set a duration for from and to
+
+@keyframes : creates an animative function()
